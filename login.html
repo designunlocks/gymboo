@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <link rel="icon" href="favicon-b.png" type="image/png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gymboo - Come in palestra, con i tuoi amici</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/fcd6dev.css">
+</head>
+
+<body class="login">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/logo-02.svg" height="30">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><button onclick="location.href='sportivi.html';" class="btn navbar-btn navbar-btn-menu" onfocus="this.blur();">Sportivi</button></li>
+                <li><button onclick="location.href='istruttori.html';" class="btn navbar-btn navbar-btn-menu" onfocus="this.blur();">Istruttori</button></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+            <li><button class="btn navbar-btn" onfocus="this.blur();">Scarica l'App</button></li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="login-container">
+        <div class="login-box">
+            <h2>Bentornato su <b>Gymboo</b>!</h2>
+            <form id ="loginform">
+                <div class="access-buttons">
+                    <button onfocus="this.blur();" class="btn btn-primary access-btn left">Accedi con Google</button><button onfocus="this.blur();" class="btn btn-primary access-btn right">Accedi con Facebook</button>
+                    <p class="oppure">oppure</p>
+                </div>
+                <div id="loginerror" class="hideError"><span class="glyphicon glyphicon-remove"></span><p>Credenziali non riconosciute.</p></div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Indirizzo e-mail</label>
+                    <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="E-mail">
+                    
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="pwInput" placeholder="Password">
+                </div>
+                <div class="checkbox-container disable-select">
+                <div class="checkbox"></div><p>Ricordami</p><p class="forgot-pw"><b>Hai dimenticato la password?</b></p>
+                </div>
+                <button id="submit-btn" onfocus="this.blur();" type="submit" class="btn btn-primary">Accedi</button>
+                <p class="new-account">Non hai un account? <br><b>Scarica l'app</b> e registrati.</p>
+            </form>
+        </div>
+        <img class="login-img right" src="assets/home-btn-09.svg">
+        <img class="login-img left" src="assets/home-btn-10.svg">
+    </div>
+    <div class="footer container-fluid">
+        <div class="inner-footer container">
+            <div class="row">
+                <div class="col-sm-2">
+                    <img src="assets/logo-white-03.svg" class="img-fluid">
+                </div>  
+                <div class="col-sm-2">
+                    <h4>Seguici</h4>
+                    <p>Facebook</p>
+                    <p>Instagram</p>
+                    <p>Youtube</p>
+                    <p>LinkedIn</p>
+                </div>
+                <div class="col-sm-2">
+                    <h4>Su Gymboo</h4>
+                    <p>Lavora con noi</p>
+                    <p>Contatti</p>
+                    <p>Centro assistenza</p>
+                    <p>News e comunicati stampa</p>
+                </div>
+                <div class="col-sm-2">
+                    <h4>Altro</h4>
+                    <p>Termini e condizioni</p>
+                    <p>Norme sulla privacy</p>
+                    <p>Note legali</p>
+                </div>
+                <div class="col-sm-4">
+                    <img class="app-download" src="assets/badge-playstore.svg" height="60">
+                    <img class="app-download" src="assets/badge-appstore.svg" height="60">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
